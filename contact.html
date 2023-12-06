@@ -1,0 +1,127 @@
+<!-- 
+    Liam Bone
+    C0862809
+    Dec 5 2023
+    Template
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Cutting Edge Blades</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/contact.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Roboto+Slab&display=swap" rel="stylesheet">
+</head>
+
+<body>
+	<!-- banner -->
+	<header id = "logo">
+		<a href="index.html"><img src="images/ceb_logo.png"></a>
+	</header>
+	
+	<!-- nav bar -->
+	<nav>
+		<ul>
+			<li><a href="index.html">Home</a></li>
+			<li><a href="about.html">About</a></li> 
+			<li><a href="team.html">Our Team</a></li> 
+			<li><a href="specials.html">Specials</a></li> 
+			<li><a href="training.html">Training</a></li>
+			<li><a href="media.html">Media</a></li>
+			<li><a href="faqs.html">FAQs</a></li>
+			<li><a href="contact.html">Contact Us</a></li>
+		</ul>
+	</nav>
+
+	<!-- main -->
+	<main>
+		<img src="images/ceb_promotional_banner.png" alt="promotional banner" class = banner>
+
+        <!--form-->
+        <div id="form">
+
+			<h2 id="signup">Sign Up Now!</h2>
+
+            <form class="form-grid">
+
+                <fieldset>
+                    <legend><span>*</span>1. Customer Information</legend>
+                    <ol>
+                        <li><label for="fName">First Name:</label>
+                            <input class="text" type="text" autofocus name="fName" required placeholder="Enter your first name"></li>
+            
+                        <li><label for="lName">Last Name:</label>
+                            <input class="text" type="text" name="lName"  required placeholder="Enter your last name"></li>
+            
+                        <li><label for="email">Email:</label>
+                            <input class="text" type="email" name="email" required></li>
+            
+                        <li><label for="phone">Phone:</label>
+                            <input class="text" type="tel"  name="phone" required></li>
+            
+                        <li><label for="Birthday">Birthday:</label>
+                            <input id="date" type="date"  name="Birthday"></li>
+            
+                        <li><label for="nickname">Nickname:</label>
+                            <input class="text" type="text"  name="nickname" placeholder="Enter a nickname we can call you"></li>
+                    </ol>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>2. Additional Information</legend>
+                    <p>I would like more information about:</p>
+                    <label for="quality">
+                    <input type="checkbox" name="interest" class="checkbox" id="quality" value="quality">Quality</label>
+                    
+                    <label for="creation">
+                    <input type="checkbox" name="interest" class="checkbox" id="creation" value="creation progress">Creation Progress</label>
+                    
+                    <label for="warranties">
+                    <input type="checkbox" name="interest" class="checkbox" id="warranties" value="warranties">Warranties</label>
+                </fieldset>
+            
+                <fieldset>
+                    <legend><span>*</span>3. Preferred Pack Size:</legend>
+                    <label for="6">6:</label>
+                    <input type="radio" id="pack6" name="delivery" value="6">
+            
+                    <label for="12">12:</label>
+                    <input type="radio" id="pack12" name="delivery" value="12" checked>
+                </fieldset>
+            
+                <fieldset>
+                    <legend>4. Preferred Style</legend>
+                    <label for="style">What is your preferred style blade?</label>
+                    <select name="style" id="style">
+                        <option value="asian style">old-fashion Style</option>
+                        <option value="modern">Modern</option>
+                        <option value="sleek">Sleek</option>
+                        <option value="fancy">Fancy</option>
+                        <option value="other">Other</option>
+                    </select>
+            
+                    <label for="questions">Questions?</label>
+                    <textarea id="questions" name="questions" rows="5" cols="35"></textarea>
+                </fieldset>
+            
+                <button type="reset" class="btn">Reset Form</button>
+            
+                <input type="submit" id="submit" value="Submit" class="btn">
+            
+            </form>
+
+		</div>
+
+	</main>
+
+	<!-- footer-->
+	<footer>
+		<p>&copy; Copyright 2099. All Rights Reserved.<br><a href="mailto:info@CuttingEdgeBlades.com">Requestinformation</a><br>Liam Bone &nbsp;&nbsp; C0862809</p>
+	</footer>
+
+</body>
+
+</html>

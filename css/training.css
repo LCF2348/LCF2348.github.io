@@ -1,0 +1,228 @@
+ /*
+  Author: Liam Bone
+  Date: Nov 22
+  File Name: training.css
+  */
+
+   /*css reset*/
+ body, header, nav, main, footer, h1, div, img, ul {
+	margin: 0;
+	padding: 0;
+	border: 0;
+  }
+
+  /*background colour*/
+body {
+	background-color: black;
+}
+ 
+/*Style rules for mobile viewport------------------------------------- */
+#container {
+	width: 375px; 
+	margin: 0 auto; 
+}
+
+/*logo*/
+#logo {
+	display: block;
+    text-align: center;
+}
+
+ /* Show mobile class, hide tablet-desktop class */
+ .mobile {
+	display: block;
+ }
+
+ .tablet-desktop {
+	display: none;
+ }
+
+ /* Style rule for box sizing applies to all elements */
+ *{ 
+	box-sizing: border-box; 
+ }
+
+ /* style rules for header (banner/logo) */
+ header {
+	top: 0;
+	background-color: black;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px black;
+ }
+
+ header img {
+	height: auto;
+    width: 190px;
+ }
+
+ /*nav bar*/
+ nav {
+	padding: 1%;
+	margin-bottom: 1%;
+ }
+ 
+ nav ul {
+	text-align: center;
+}
+
+ nav li {
+	font-size: 1.5em;
+	font-family: 'impact';
+	border-bottom: 1px solid #fff;
+ }
+ 
+ nav li a {
+	display: block;
+	color: #fff;
+	padding: 0.5em 1em;
+	text-decoration: none;
+ }
+
+ /*main*/
+ .box {
+	font-family: 'ariel';
+	display: block;
+	color: white;
+	font-size: 20px;
+	margin: 10px;
+	padding: 10px;
+	border-radius: 10px;
+	box-shadow: 5px 5px 10px grey;
+ }
+
+ /*product of the week*/
+ #weekly {
+	height: 300px; 
+	width: auto;
+ }
+
+ /*banner*/
+ .banner {
+	width: 100%;
+ }
+
+ /*table*/
+ table {
+    width: 80%;
+    border-collapse: collapse;
+    margin: 20px;
+    border: 2px solid white;
+    background-color: black; 
+    color: white; 
+}
+
+th, td {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 12px;
+}
+
+th {
+    background-color: black;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+}
+
+caption {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(136, 136, 136);
+}
+
+tr:hover {
+    background-color: #464545;
+}
+
+ /*Footer*/
+footer {
+	font-size: 15px;
+	background-color: grey;
+	color: black;
+	text-align: center;
+	margin-top: 20px;
+}
+
+/* Media Query for Tablet Viewport */
+@media screen and (min-width: 630px), print {
+
+	/* Tablet Viewport: Style rule for header */  
+	header { 
+		padding-bottom: 2%;
+	}
+
+	/* Tablet Viewport: Show tablet-desktop class, hide mobile class */ 
+	.tablet-desktop {
+		display: block;
+    }
+
+    .mobile {
+		display: none;
+    }
+
+  /* Tablet Viewport: Style rules for nav area */
+  nav li {
+		border-top: none; 
+		display: inline-block;
+		border-right: 1px solid #fff; 
+   }
+
+   nav li:last-child { 
+		border-right: none; 
+   }
+
+   nav li a { 
+		padding: 0.1em 0.75em; 
+   }
+
+   /* Tablet Viewport: Style rules for main content area */
+   main ul { 
+		margin: 0 0 4% 10%;
+   }
+	
+
+}
+
+/* Media Query for Desktop Viewport */ 
+@media screen and (min-width: 1015px), print { 
+
+	/* Desktop Viewport: Style rule for header */ 
+	header { 
+		width: 25%;
+		float: left; 
+		padding-bottom: 0;
+	}
+
+	/* Desktop Viewport: Style rules for nav area */ 
+	nav {
+		float: right; 
+		width: 70%;
+		margin: 4em 1em 0 0;
+	}
+
+	nav ul { 
+		text-align: right;
+	}
+
+	nav li { 
+		border: none; 
+	}
+
+	nav li a { 
+		padding: 0.5em 1em; 
+	}
+
+	nav li a:hover {
+		color: #000;
+		background-color: #fff; 
+	}
+
+	/* Desktop Viewport: Style Rules for main content */ 
+	main {
+		clear: left;
+	}
+}
